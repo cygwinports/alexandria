@@ -1,0 +1,201 @@
+alexandria
+-------------------------------------------
+Alexandria is a GNOME application to help you manage your book collection.
+
+  * retrieves and displays book information (including cover pictures) from
+    several online libraries, such as Amazon, Proxis and Barnes and Noble;
+  * allows books to be added and updated by hand ;
+  * enables searches either by EAN/ISBN, title, authors or keyword ;
+  * saves data using the YAML format ;
+  * can import and export data into ONIX, Tellico and ISBN-list formats ;
+  * features a HIG-compliant user interface ;
+  * shows books in different views (standard list or icons list), that can
+    be either filtered or sorted ;
+  * handles book rating and notes ;
+  * supports CueCat (R) barcode readers ;
+  * includes translations for several languages.
+
+Runtime requirements:
+  cygwin-1.5.18-1
+  ruby-1.8.3-2
+  ruby-amazon-0.8.5-1
+  ruby-gconf2-0.14.1-2
+  ruby-gdkpixbuf2-0.14.1-2
+  ruby-gettext-0.8.0-1
+  ruby-gnome2-0.14.1-2
+  ruby-gnomecanvas2-0.14.1-2
+  ruby-libglade2-0.14.1-2
+  ruby-pango-0.14-1-2
+  ruby-zoom-0.2.2-1
+
+Canonical homepage:
+  http://alexandria.rubyforge.org/
+
+Canonical download:
+  http://rubyforge.org/projects/alexandria/
+
+-------------------------------------------
+
+Build instructions:
+  unpack alexandria-0.6.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  ./alexandria-0.6.1-X.sh all
+
+This will create:
+  /usr/src/alexandria-0.6.1-X-src.tar.bz2
+  /usr/src/alexandria-0.6.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/gconf/schemas/alexandria.schemas
+  /etc/postinstall/alexandria.sh
+  /etc/preremove/alexandria.sh
+  /usr/bin/alexandria
+  /usr/lib/ruby/site_ruby/1.8/alexandria/book.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/book_providers/amadeus.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/book_providers/amazon.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/book_providers/bn.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/book_providers/ibs_it.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/book_providers/mcu.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/book_providers/proxis.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/book_providers/z3950.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/book_providers.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/config.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/default_preferences.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/execution_queue.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/export_library.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/import_library.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/library.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/AboutController.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/AddBookController.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/BookIconCell.m
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/BookInfoController.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/BooksDataSource.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/ExportController.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/Icons.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/ImportController.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/Info.plist
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/LibrariesDataSource.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/main.m
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/main.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/MainController.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/MainWindow.nib/classes.nib
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/MainWindow.nib/info.nib
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/MainWindow.nib/keyedobjects.nib
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/Matrix.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/PreferencesController.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/RatingCell.m
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/RatingField.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/TableView.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/TitledImageCell.m
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui/Utils.m
+  /usr/lib/ruby/site_ruby/1.8/alexandria/macui.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/preferences.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/scanners/cuecat.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/scanners.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/ui/about_dialog.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/ui/alert_dialog.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/ui/book_properties_dialog.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/ui/book_properties_dialog_base.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/ui/completion_models.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/ui/export_dialog.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/ui/glade_base.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/ui/icons.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/ui/import_dialog.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/ui/main_app.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/ui/new_book_dialog.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/ui/new_book_dialog_manual.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/ui/preferences_dialog.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/ui.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/utils.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/version.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria/web_themes.rb
+  /usr/lib/ruby/site_ruby/1.8/alexandria.rb
+  /usr/share/alexandria/glade/book_properties_dialog.glade
+  /usr/share/alexandria/glade/main_app.glade
+  /usr/share/alexandria/glade/new_book_dialog.glade
+  /usr/share/alexandria/glade/preferences_dialog.glade
+  /usr/share/alexandria/icons/alexandria.png
+  /usr/share/alexandria/icons/alexandria_small.png
+  /usr/share/alexandria/icons/book.png
+  /usr/share/alexandria/icons/book_icon.png
+  /usr/share/alexandria/icons/book_small.png
+  /usr/share/alexandria/icons/cuecat.png
+  /usr/share/alexandria/icons/cuecat_inactive.png
+  /usr/share/alexandria/icons/favorite_tag.png
+  /usr/share/alexandria/icons/less.png
+  /usr/share/alexandria/icons/library.png
+  /usr/share/alexandria/icons/library_small.png
+  /usr/share/alexandria/icons/lookup.png
+  /usr/share/alexandria/icons/more.png
+  /usr/share/alexandria/icons/no_cover.png
+  /usr/share/alexandria/icons/star_set.png
+  /usr/share/alexandria/icons/star_unset.png
+  /usr/share/alexandria/icons/view_as_icons.png
+  /usr/share/alexandria/icons/view_as_list.png
+  /usr/share/alexandria/ui/menus.xml
+  /usr/share/alexandria/ui/popups.xml
+  /usr/share/alexandria/web-themes/clean/clean.css
+  /usr/share/alexandria/web-themes/clean/preview.jpg
+  /usr/share/applications/alexandria.desktop
+  /usr/share/doc/Cygwin/alexandria-0.6.1.README
+  /usr/share/doc/alexandria-0.6.1/AUTHORS
+  /usr/share/doc/alexandria-0.6.1/ChangeLog
+  /usr/share/doc/alexandria-0.6.1/COPYING
+  /usr/share/doc/alexandria-0.6.1/HACKING
+  /usr/share/doc/alexandria-0.6.1/NEWS
+  /usr/share/doc/alexandria-0.6.1/README
+  /usr/share/doc/alexandria-0.6.1/TODO
+  /usr/share/gnome/help/alexandria/C/alexandria.xml
+  /usr/share/gnome/help/alexandria/C/figures/alexandria_add_by_isbn_1.png
+  /usr/share/gnome/help/alexandria/C/figures/alexandria_add_by_search_1.png
+  /usr/share/gnome/help/alexandria/C/figures/alexandria_add_manually.png
+  /usr/share/gnome/help/alexandria/C/figures/alexandria_add_z3950.png
+  /usr/share/gnome/help/alexandria/C/figures/alexandria_edit_info.png
+  /usr/share/gnome/help/alexandria/C/figures/alexandria_export_web_page.png
+  /usr/share/gnome/help/alexandria/C/figures/alexandria_importing.png
+  /usr/share/gnome/help/alexandria/C/figures/alexandria_library_pane.png
+  /usr/share/gnome/help/alexandria/C/figures/alexandria_list_view.png
+  /usr/share/gnome/help/alexandria/C/figures/alexandria_list_view_search.png
+  /usr/share/gnome/help/alexandria/C/figures/alexandria_loaning.png
+  /usr/share/gnome/help/alexandria/C/figures/alexandria_main_window.png
+  /usr/share/gnome/help/alexandria/ChangeLog
+  /usr/share/locale/cs/LC_MESSAGES/alexandria.mo
+  /usr/share/locale/cy/LC_MESSAGES/alexandria.mo
+  /usr/share/locale/de/LC_MESSAGES/alexandria.mo
+  /usr/share/locale/es/LC_MESSAGES/alexandria.mo
+  /usr/share/locale/fr/LC_MESSAGES/alexandria.mo
+  /usr/share/locale/it/LC_MESSAGES/alexandria.mo
+  /usr/share/locale/ja/LC_MESSAGES/alexandria.mo
+  /usr/share/locale/pl/LC_MESSAGES/alexandria.mo
+  /usr/share/locale/pt/LC_MESSAGES/alexandria.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/alexandria.mo
+  /usr/share/locale/sv/LC_MESSAGES/alexandria.mo
+  /usr/share/omf/alexandria/alexandria-C.omf
+
+------------------
+
+Port Notes:
+
+----- version 0.6.1-2 -----
+Fixed dependencies.
+
+----- version 0.6.1-1 -----
+Version bump.
+
+----- version 0.6.0-1 -----
+Version bump.
+
+----- version 0.5.1-1 -----
+Upstream version bump.
+
+----- version 0.4.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
