@@ -1,0 +1,15 @@
+inherit ruby
+
+DESCRIPTION="GNOME book collection manager"
+HOMEPAGE="http://alexandria.rubyforge.org/"
+SRC_URI="mirror://rubyforge/${PN}/${P}.tar.gz"
+PATCH_URI="mirror://portage/app-misc/${PN}/files/${P}-Rakefile.patch"
+
+src_install() {
+	cd ${B}
+	DESTDIR=${D} PREFIX=/usr RUBYLIBDIR=${RUBY_VENDORLIB} \
+	rake install_package_staging || error "rake install failed"
+
+	dodir /etc/gconf/schemas
+	mv ${D}/usr/share/gconf/schemas/* ${D}/etc/gconf/schemas/
+}
