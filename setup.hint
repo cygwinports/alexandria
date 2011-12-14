@@ -1,5 +1,5 @@
 category: Gnome Office
-requires: ruby ruby-gettext ruby-gconf2 ruby-gdk_pixbuf2 ruby-gnome2 ruby-gtk2 ruby-hpricot ruby-htmlentities ruby-imagesize ruby-libglade2 ruby-marc ruby-zoom
+requires: ruby ruby-gettext ruby-gdk_pixbuf2 ruby-glib2 ruby-goocanvas ruby-gst ruby-gtk2 ruby-hpricot ruby-htmlentities ruby-imagesize ruby-marc ruby-zoom
 sdesc: "GNOME book collection management application"
 ldesc: "Alexandria is a GNOME application to help you manage your book collection.
   * retrieves and displays book information (including cover pictures) from
