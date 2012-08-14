@@ -1,6 +1,9 @@
 inherit ruby
 
-DESCRIPTION="GNOME book collection manager"
+CATEGORY="Gnome"
+SUMMARY="GNOME book collection manager"
+DESCRIPTION="Alexandria is a GNOME application to help you manage your
+book collection."
 HOMEPAGE="http://alexandria.rubyforge.org/"
 SRC_URI="mirror://rubyforge/${PN}/${P}.tar.gz"
 
