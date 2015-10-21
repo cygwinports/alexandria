@@ -2,7 +2,7 @@ inherit ruby
 
 NAME="alexandria"
 VERSION=0.6.9
-RELEASE=3
+RELEASE=4
 CATEGORY="GNOME"
 SUMMARY="GNOME book collection manager"
 DESCRIPTION="Alexandria is a GNOME application to help you manage your
@@ -13,7 +13,7 @@ SRC_URI="mirror://rubyforge/${NAME}/${P}.tar.gz"
 PATCH_URI="
 http://pkgs.fedoraproject.org/cgit/${NAME}.git/plain/${NAME}-0.6.6-dont_use_thread_when_adding_file_by_isdn.patch
 http://pkgs.fedoraproject.org/cgit/${NAME}.git/plain/${NAME}-0.6.8-always-require-rubygems.patch
-http://pkgs.fedoraproject.org/cgit/${NAME}.git/plain/${NAME}-0.6.8-rbconfig.patch
+http://pkgs.fedoraproject.org/cgit/${NAME}.git/plain/${NAME}-0.6.9-rbconfig.patch
 http://pkgs.fedoraproject.org/cgit/${NAME}.git/plain/${NAME}-0.6.8-ascii-fix.patch
 http://pkgs.fedoraproject.org/cgit/${NAME}.git/plain/${NAME}-0.6.8-kcodefix.patch
 http://pkgs.fedoraproject.org/cgit/${NAME}.git/plain/${NAME}-0.6.8-evalfix.patch
