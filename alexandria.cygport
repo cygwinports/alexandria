@@ -2,7 +2,7 @@ inherit ruby
 
 NAME="alexandria"
 VERSION=0.6.9
-RELEASE=4
+RELEASE=5
 CATEGORY="GNOME"
 SUMMARY="GNOME book collection manager"
 DESCRIPTION="Alexandria is a GNOME application to help you manage your
@@ -30,6 +30,7 @@ http://pkgs.fedoraproject.org/cgit/${NAME}.git/plain/${NAME}-0.6.9-z3950-zoom-co
 http://pkgs.fedoraproject.org/cgit/${NAME}.git/plain/${NAME}-0.6.9-negative-value.patch
 http://pkgs.fedoraproject.org/cgit/${NAME}.git/plain/${NAME}-0.6.9-goocanvas-version.patch
 http://pkgs.fedoraproject.org/cgit/${NAME}.git/plain/${NAME}-0.6.9-glade-gettext.patch
+http://pkgs.fedoraproject.org/cgit/${NAME}.git/plain/${NAME}-0.6.9-gdk_pixbuf2-3.0.9.patch
 "
 
 ARCH=noarch
